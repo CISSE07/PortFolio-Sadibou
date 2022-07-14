@@ -1,0 +1,1528 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;0,400;0,600;0,700;1,100;1,500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;0,400;0,600;0,700;1,100;1,500&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "Raleway",sans-serif;
+}
+
+:root{
+    --blue:#0065FC;
+    --lightgray:#DEEBFF;
+    --grey:#F2F2F2;
+}
+.lightgray{
+    color: var(--lightgray);
+}
+.blue{
+    color: var(--blue);
+}
+
+/* NAVIGATION */
+
+header{
+    display: flex;
+    justify-content: space-between;
+    padding-left: 35PX;
+    width: 95%;
+}
+header img{
+    width: 90px;
+    margin: 30px;
+}
+nav{
+    display: flex;
+    justify-content: flex-end;
+   
+}
+nav ul{
+    list-style-type: none;
+    display: flex;
+    
+}
+nav li{
+    border-top: 2px solid transparent;
+    padding-top: 40px;
+}
+nav li:hover{
+    border-top: 2px solid #0065FC;
+    padding-top: 40px;
+}
+nav a {
+    text-decoration: none;
+    color: black;
+    margin: 45px;
+}
+nav a:hover {
+    color: var(--blue);
+    
+}
+
+/* PREMIERE SECTION  */
+
+h1{
+    font-size: 20px;
+}
+#firstPart h2{
+    font-size: 16px;
+    font-weight:normal;
+    margin-top: 10px;
+}
+#firstPart{
+    margin: 20px;
+    padding-left: 30px;
+}
+
+/* BARRE DE RECHERCHE */
+
+#searchBar{
+    display: flex;
+    border: 1px solid var(--grey);
+    width: 30%;
+    margin-top: 10px;
+    height: 39PX;
+    border-radius: 10PX;
+}
+.fa-map-marker-alt{
+    background-color: var(--grey);
+    font-size: small;
+    width: 45PX;
+    border-radius: 10PX 0PX 0PX 10PX;
+}
+.fa-map-marker-alt:before {
+    content: "\f3c5";
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+  
+}
+.search{
+    border: none;
+    display: flex;
+    margin-left: 15px;
+    width: 60%;
+    font-weight: 600;
+    font-size: 16PX;
+}
+.button{
+    border: 1px solid transparent;
+    background-color: var(--blue);
+    padding-left: 3PX;
+    width: 121PX;
+    border-radius: 0PX 10PX 10PX 0PX;
+    color: white;
+    font-size: 16PX;
+    cursor: pointer;
+}
+.fa-search::before{
+    display: none;
+}
+
+/* FILTRE */
+
+#Filtre{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-top: 30PX;
+    width: 750PX;
+    margin-left: -15PX;
+} 
+#row{
+    display: flex;
+}   
+#column{
+    display: flex;
+}
+
+div #h3{
+    font-size: 16px;
+}
+.money, .heart{
+    display: flex;
+    width: 128PX;
+    height: 27PX;
+    justify-content: space-between;
+    border: 1.5PX solid var(--lightgray);
+    border-radius: 23PX;
+    margin-left: 15px;
+}
+
+.money:hover, .heart:hover{
+    display: flex;
+    width: 136PX;
+    height: 30PX;
+    justify-content: space-between;
+    border: 2PX solid var(--lightgray);
+    border-radius: 23PX;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+
+.text{
+    font-weight: 600;
+    font-size: 14PX;
+    display: flex;
+    align-items: center;
+}
+.text:hover{
+    font-size: 13px;
+}
+.text1 span{
+    text-transform: uppercase;
+}
+.text1{
+    width: 96PX;
+}
+
+/* child */
+
+.child{
+    display: flex;
+    width: 100PX;
+    height: 27PX;
+    justify-content: space-between;
+    border: 1.5PX solid var(--lightgray);
+    border-radius: 23PX;
+    margin-left: 15px;
+}
+.child:hover{
+    display: flex;
+    width: 105PX;
+    height: 30px;
+    justify-content: space-between;
+    border: 2PX solid var(--lightgray);
+    border-radius: 23PX;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.fa-child, .fa-heart, .fa-money-bill-wave,.fa-dog{
+    background-color: var(--lightgray);
+    border-radius: 30PX;
+   
+}
+.fa-child:before, .fa-heart:before,.fa-dog:before, .fa-money-bill-wave::before {
+    content: "\f53a";
+    width: 29PX;
+    font-size: 11PX;
+    display: flex;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+}
+.text2{
+    width: 65px;
+}
+
+/* heart */
+
+.text3{
+    width: 95px;
+}
+
+/* dog */
+
+.dog{
+    display: flex;
+    width: 175PX;
+    height: 27PX;
+    justify-content: space-between;
+    border: 1.5PX solid var(--lightgray);
+    border-radius: 23PX;
+    margin-left: 15px;;
+}
+.dog:hover{
+    display: flex;
+    width: 175PX;
+    height: 27PX;
+    justify-content: space-between;
+    border: 2PX solid var(--lightgray);
+    border-radius: 23PX;
+    transition: 0.2s;
+    cursor: pointer;
+}
+.text4{
+    width: 140px;
+}
+.text4:hover{
+    width: 140px;
+}
+
+/* ICON INFO */
+.info{
+    display: flex;
+    margin-top: 35PX;
+    width: 470PX;
+    font-size: 14PX;
+}
+.info i{
+    margin-right: 5PX;
+    border: 1PX solid var(--lightgray);
+    width: 15px;
+    display: flex;
+    justify-content: center;
+    border-radius: 60PX;
+    font-size: x-small;
+    align-items: center;
+}
+
+/* main parte section */
+#mainPart{
+    display: flex;
+    padding-left: 20px;
+    width: 95%;
+}
+
+/* PARTIE HEBERGEMENT */
+
+#partie_hebergement{
+    background-color: var(--grey);
+    border: 1PX solid transparent;
+    border-radius: 15PX;
+    margin: 25PX;
+    width: 65%;
+}
+#partie_hebergement h2{
+    margin: 15PX;
+    font-size: 15PX;
+    font-size: 19PX;
+    padding-left: 30px;
+}
+#position_carte{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    width: 100%;
+}
+.photo_carte{
+    border: 2PX solid transparent;
+    width: 25%;
+    background-color: WHITE;
+    margin: 12PX;
+    border-radius: 10PX;
+}
+.img_carte img{
+    height: 110PX;
+    width: 98%;
+    border: 2PX solid transparent;
+    border-radius: 10PX 10PX 0PX 0PX;
+    object-fit: cover;
+}
+.box_carte{
+    font-size: 12PX;
+    margin-left: 7PX;
+}
+#afficher{
+    font-size: 14PX;
+    margin: 20px;
+    height: 45PX;
+    padding-left: 25px;
+}
+.star{
+    margin-top: 5px;
+}
+
+/* partie populaire */
+
+#partie_populaire{
+    background-color: var(--grey);
+    border: 1px solid transparent;
+    border-radius: 15PX;
+    margin: 25PX;
+    width: 27%;
+}
+#partie_populaire h2{
+    font-size: 19PX;
+    margin: 15PX;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.photo_carte2{
+    display: flex;
+    margin: 15PX;
+    background-color: white;
+    border: 2PX solid transparent;
+    border-radius: 15PX;
+    height: 137px;
+}
+.img_carte2 img{
+    width: 125PX;
+    height: 130PX;
+    margin: 2PX;
+    border: 2PX solid transparent;
+    border-radius: 15PX 0PX 0PX 15PX;
+    object-fit: cover;
+}
+.box_carte2{
+    font-size: 13PX;
+    margin: 5PX;
+    padding-left: 2px;
+}
+.star2{
+    margin-top: 60PX;
+}
+
+/* PARTIE ACTIVITE */
+#partie_activités{
+    width: 94%;
+    margin-left: 15px;
+}
+
+/* positionnement des cartes activités */
+#position_activités{
+    display: flex;
+}
+
+#partie_activités h2{
+    margin: 25px;
+    padding-left: 15px;
+}
+/* image grand format */
+
+.img_grand{
+    width: 25%;
+    margin-left: 25px;
+    cursor: pointer;
+}
+.img_grand img{
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+    border: 1px solid transparent;
+    border-radius: 35px 35px 0px 0px;
+}
+.column_activités{
+    display: flex;
+    flex-direction: column;
+    padding-left: 32px;
+}
+
+/* box texte */
+
+.box_texte{
+    padding: 19px;
+    border: 1px solid transparent;
+    box-shadow: 6px 6px 6px #f2f2f2;
+    border-radius: 0px 0px 35px 35px;
+}
+.box_texte h3{
+    font-size: 13px;
+}
+
+/* image de taille moyenne */
+
+.img_moyen{
+    width: 275px;
+    cursor: pointer;
+}
+.img_moyen img{
+    width: 100%;
+    height: 179px;
+    object-fit: cover;
+    border: 1px solid transparent;
+    border-radius: 35px 35px 0px 0px;
+}
+
+/* la petite image */
+
+.img_petit{
+    width: 275px;
+    cursor: pointer;
+}
+.img_petit img{
+    width: 100%;
+    height: 125px;
+    object-fit: cover;
+    border: 2px solid transparent;
+    border-radius: 35px 35px 0px 0px;
+}
+.Ile{
+    margin-top: 34px;
+}
+.Parc{
+    margin-top: 34px;
+}
+footer{
+    display: flex;
+    background-color: var(--grey);
+    padding: 50px;
+    margin-top: 55px;
+  
+}
+#pied{
+    margin-left: 25px;
+}
+#pied ul{
+    margin-top: 10px;
+}
+.pied_page{
+    margin-left: 200px;
+    display: flex;
+    flex-direction: column;
+}
+.pied_page ul{
+    margin-top: 10px;
+}
+footer a{
+   
+    text-decoration: none;
+    color: black;
+}
+footer li{
+    list-style-type: none;
+    padding-top: 5px;
+}
+
+/* responsive mobile */
+
+@media all and (min-width: 320px) and (max-width:430px) {
+    header{
+        display: flex;
+        flex-direction: column;
+        padding-left: 0px;
+        width: 100%;
+    }
+    #image{
+        display: flex;
+        justify-content: center;
+    }
+    nav{
+        padding: 0;
+        justify-content: space-between;
+        margin-bottom: 20px;
+    }
+    nav ul{
+        width: 100%;
+    }
+    nav li{
+        border-bottom: 2px solid #F2F2F2;
+        padding-bottom: 10px;
+        width: 50%;
+    }
+    nav li:hover{
+        border-bottom: 2px solid var(--blue);
+        padding-bottom: 5px;
+    }
+    nav a:hover{
+        border-top: 0;
+    }
+    #firstPart{
+        margin: 0px;
+        padding-left: 10px;
+    
+    }
+    #firstPart h1{
+        font-size: 20px;
+    }
+    #firstPart h2{
+        margin-top: 10px;
+        font-size: 16px;
+    }
+    #searchBar{
+        margin-top: 31px;
+        width: 80%;
+        border-radius: 10px 15px 15px 10px;
+    }
+    .search{
+        font-size: 16px;
+        margin-right: 10px;
+        width: 65%;
+    }
+    .button{
+        width: 45px;
+        border-radius: 15px;
+        font-size: 13px;
+        display: none;
+    }
+    .fa-search::before{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 15px;
+        background-color: #0065FC;
+        color: white;
+        width: 45px;
+        height: 100%;
+        cursor: pointer;
+    }
+    /* filtre */
+
+    #Filtre{
+        flex-direction: column;
+        align-items: flex-start;
+        margin-left: 3px;
+        width: 265px;
+    }
+    #row{
+        margin-top: 10px;
+        flex-wrap: wrap;
+    }
+    .money, .heart{
+        height: 30px;
+        border: 2px solid var(--grey);
+        margin-left: 0;
+    }
+    .family{
+        margin-top: 10px;
+    }
+    .all_fas{
+        width: 30px;
+        border-radius: 30px;
+    }
+    .child{
+        margin-left: 10px;
+        height: 30px;
+        border: 2px solid var(--grey);
+    }
+    
+    .dog{
+        margin-top: 10px;
+        height: 30px;
+        border: 2px solid var(--grey);
+        margin-left: 0;
+    
+    }
+    .info{
+        width: 299px;
+    }
+    .info i{
+        width: 26px;
+        border-radius: 67px;
+        font-size: 10px;
+        height: 20px;
+    }
+
+   /* PARTIE POPULAIRE */
+
+    #mainPart{
+        display: flex;
+        flex-direction: column-reverse;
+        padding-left: 0;
+        width: 100%;
+    }
+    #partie_populaire{
+        width: 100%;
+        margin: 0;
+        margin-top: 21px;
+        border-radius: 0;
+    }
+    .box_carte2{
+        margin: 4px;
+        padding-top: 2px;
+    }
+
+    /* PARTIE HEBERGEMENT */
+
+    #partie_hebergement{
+        width: 100%;
+        margin: 0;
+        margin-top: 5px;
+        background-color: #fafafa73;
+    }
+    #partie_hebergement h2{
+        padding-left: 10px;
+    }
+    #position_carte{
+        flex-direction: column;
+    }
+    .photo_carte{
+        margin: 0;
+        width: 95%;
+        padding-left: 5px;
+        box-shadow: 1px 1px 10px var(--grey);
+        margin-bottom: 15px;
+    }
+    #afficher{
+        margin: 10px;
+        height: 35px;
+        padding-left: 0px;
+    }
+
+/* PARTIE ACTIVITE */
+
+    #partie_activités{
+        width: 100%;
+        margin-left: 0PX;
+    }
+    #partie_activités h2{
+        padding-left: 5px;
+    }
+    #position_activités{
+        flex-direction: column;
+    }
+    .img_grand{
+        width: 90%;
+        margin-left: 20px;
+        margin-top: 30px;
+    }
+    .img_grand img{
+        height: 140px;
+    }
+    .column_activités{
+        margin-top: 31px;
+        padding-left: 25px;
+    }
+    .img_moyen{
+        width: 95%;
+    }
+    .img_moyen img{
+        height: 140px;
+    }
+    .img_petit{
+        width: 95%;
+    }
+    .img_petit img{
+        height: 140px;
+        width: 100%;
+    }
+    footer{
+        width: 100%;
+        flex-direction: column;
+        padding: 0;
+        padding-bottom: 40px;
+    }
+    #pied{
+        margin-left: 25px;
+        margin-top: 40px;
+    }
+    .pied_page{
+        margin-left: 25px;
+        margin-top: 33px;
+    }
+}
+
+@media all and (min-width:431px) and (max-width:523px) {
+    header{
+        flex-direction: column;
+        padding-left: 0;
+        width: 100%;
+    }
+    #image{
+        display: flex;
+        justify-content: center;
+    }
+    nav{
+        padding: 0;
+        margin-bottom: 20px;
+    }
+    nav ul{
+        width: 100%;
+    }
+    nav li{
+        width: 50%;
+        border-bottom: 2px solid var(--grey);
+        padding-bottom: 10px;
+    }
+    nav li:hover{
+        border-bottom: 2px solid var(--blue);
+        padding-bottom: 10px
+        
+    }
+    nav a:hover{
+        border-top: 0;
+    }
+    #firstPart{
+        padding-left: 10px;
+        margin: 0;
+    }
+    #main_title{
+        width: 100%;
+    }
+    #main_title h1{
+        width: 100%;
+    }
+    #main_title h2{
+        margin-top: 10px;
+    }
+    #searchBar{
+        width: 80%;
+        margin-top: 31px;
+        border-radius: 10px 15px 15px 10px;
+    }
+    .search{
+        margin-right: 10px;
+        font-size: 16px;
+        width: 80%;
+    }
+    .button{
+        width: 45px;
+        border-radius: 15px;
+        font-size: 14px;
+        display: none;
+    }
+    .fa-search::before{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 15px;
+        background-color: #0065FC;
+        color: white;
+        width: 45px;
+        height: 100%;
+        cursor: pointer;
+    }
+
+    /* filtre  */
+
+    #Filtre{
+        flex-direction: column;
+        align-items: flex-start;
+        margin-left: 3px;
+        width: 265px;
+    }
+    #row{
+        display: flex;
+        margin-top: 10px;
+        flex-wrap: wrap;
+    }
+    .money, .heart{
+        height: 30px;
+        border: 2px solid var(--grey);
+        margin-left: 0;
+    }
+    .family{
+        margin-top: 10px;
+    }
+    .all_fas{
+        width: 30px;
+        border-radius: 30px;
+    }
+    .child{
+        margin-left: 10px;
+        height: 30px;
+        border: 2px solid var(--grey);
+    }
+    
+    .dog{
+        margin-top: 10px;
+        height: 30px;
+        border: 2px solid var(--grey);
+        margin-left: 0;
+    
+    }
+    .info{
+        width: 299px;
+    }
+    .info i{
+        width: 26px;
+        border-radius: 67px;
+        font-size: 10px;
+        height: 20px;
+    }
+
+    /* PARTIE POPULAIRE */
+
+    #mainPart{
+        display: flex;
+        flex-direction: column-reverse;
+        padding-left: 0;
+        width: 100%;
+    }
+    #partie_populaire{
+        width: 100%;
+        margin: 0;
+        margin-top: 21px;
+        border-radius: 0;
+    }
+    .box_carte2{
+        margin: 4px;
+        padding-top: 2px;
+    }
+
+    /* PARTIE HEBERGEMENT */
+
+    #partie_hebergement{
+        width: 100%;
+        margin: 0;
+        margin-top: 5px;
+        background-color: #fafafa73;
+    }
+    #partie_hebergement h2{
+        padding-left: 10px;
+    }
+    #position_carte{
+        flex-direction: column;
+    }
+    .photo_carte{
+        margin: 0;
+        width: 95%;
+        padding-left: 5px;
+        box-shadow: 1px 1px 10px var(--grey);
+        margin-bottom: 15px;
+    }
+    #afficher{
+        margin: 10px;
+        height: 35px;
+        padding-left: 0px;
+    }
+
+/* PARTIE ACTIVITE */
+
+    #partie_activités{
+        width: 100%;
+        margin-left: 0PX;
+    }
+    #partie_activités h2{
+        padding-left: 5px;
+    }
+    #position_activités{
+        flex-direction: column;
+    }
+    .img_grand{
+        width: 90%;
+        margin-left: 20px;
+        margin-top: 30px;
+    }
+    .img_grand img{
+        height: 140px;
+    }
+    .column_activités{
+        margin-top: 31px;
+        padding-left: 25px;
+    }
+    .img_moyen{
+        width: 95%;
+    }
+    .img_moyen img{
+        height: 140px;
+    }
+    .img_petit{
+        width: 95%;
+    }
+    .img_petit img{
+        height: 140px;
+        width: 100%;
+    }
+    footer{
+        width: 100%;
+        flex-direction: column;
+        padding: 0;
+        padding-bottom: 40px;
+    }
+    #pied{
+        margin-left: 25px;
+        margin-top: 40px;
+    }
+    .pied_page{
+        margin-left: 25px;
+        margin-top: 33px;
+    }
+
+}
+
+@media all and (min-width:524px) and (max-width:768px) {
+    header{
+        padding-left: 0;
+        flex-direction: column;
+        width: 100%;
+    }
+    #image{
+        display: flex;
+        justify-content: center;
+    }
+    #image img{
+        width: 90px;
+    }
+
+    /* navigation */
+
+    nav{
+        padding: 0;
+        margin-bottom: 20px;
+    }
+    nav ul{
+        width: 100%;
+    }
+    nav li{
+        width:50%;
+        border-bottom: 2px solid var(--grey);
+        padding-bottom: 10px;
+        font-size: 16px;
+        display: flex;
+        justify-content: center;
+    }
+    nav li:hover{
+        border-bottom: 2px solid var(--blue);
+        padding-bottom: 10px;
+    }
+    nav a{
+        margin: 0px;
+    }
+    nav a:hover{
+        border-top: 0px;
+        padding-top: 0px;
+    }
+
+    /* premiere partie */
+
+    #firstPart{
+        padding-left: 10px;
+        margin: 0;
+    }
+    #main_title h1{
+        width: 100%;
+        font-size: 20px;
+    }
+    #main_title h2{
+        margin-top: 10px;
+        font-size: 16px;
+    }
+    #searchBar{
+        width: 70%;
+        margin-top: 31px;
+        border-radius: 10px 15px 15px 10px;
+    }
+    .search{
+        width: 90%;
+    }
+    .button{
+        display: none;
+    }
+    .fa-search::before{
+        border: 1px solid transparent;
+        border-radius: 15px;
+        width: 45px;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: white;
+        background-color: var(--blue);
+    }
+
+    /* filtre  */
+
+    #Filtre{
+        flex-direction: column;
+        align-items: flex-start;
+        width: 300px;
+    }
+    #Filtre h3{
+        font-size: 20px;
+        margin-left: 15px;
+    }
+    #row{
+        display: flex;
+        margin-top: 10px;
+        flex-wrap: wrap;
+    }
+    .money, .heart{
+        height: 30px;
+        border: 2px solid var(--grey);
+        margin-left: 10px;
+    }
+    .family{
+        margin-top: 10px;
+    }
+
+    .all_fas{
+        width: 30px;
+        border-radius: 30px;
+    }
+    .child{
+        margin-left: 10px;
+        height: 30px;
+        border: 2px solid var(--grey);
+    }
+    
+    .dog{
+        margin-top: 10px;
+        height: 30px;
+        border: 2px solid var(--grey);  
+        margin-left: 10px;  
+    }
+    
+    .info{
+        font-size: 16px;
+        width: 65%;
+    }
+    .info i{
+        width: 18px;
+        border-radius: 67px;
+        font-size: 10px;
+        height: 16px;
+    }
+
+    /* #mainPart les plus populaires */
+
+    #mainPart{
+        display: flex;
+        flex-direction: column-reverse;
+        padding-left: 0;
+        width: 100%;
+    }
+    #partie_populaire{
+        width: 100%;
+        margin: 0;
+        margin-top: 21px;
+        border-radius: 0;
+    }
+    #partie_populaire h2 {
+        font-size: 20px;
+    }
+     .photo_carte2 {
+        height: 208px;
+        width: 75%;
+        margin-left: 90px;
+    }
+    .img_carte2 img {
+        width: 200PX;
+        height: 200PX;
+        margin: 2PX;
+        border: 2PX solid transparent;
+        border-radius: 15PX 0PX 0PX 15PX;
+        object-fit: cover;
+    }
+    .box_carte2{
+        margin: 4px;
+        font-size: 14px;
+        margin: 15px;
+    }
+    .star2 {
+        margin-top: 100px;
+    }
+
+    /* PARTIE HEBERGEMENT */
+
+    #partie_hebergement{
+        width: 100%;
+        margin: 0;
+        margin-top: 5px;
+        background-color: #fafafa73;
+    }
+    #partie_hebergement h2{
+        padding-left: 10px;
+    }
+    .photo_carte{
+        margin: 0;
+        width: 47%;
+        padding-left: 5px;
+        box-shadow: 1px 1px 10px var(--grey);
+        margin-bottom: 15px;
+    }
+    .img_carte img {
+        height: 201PX;
+        width: 100%;
+        border: 2PX solid transparent;
+        border-radius: 10PX 10PX 0PX 0PX;
+        object-fit: cover;
+    }
+    #afficher{
+        margin: 10px;
+        height: 35px;
+        padding-left: 0px;
+    }
+    .box_carte {
+        font-size: 12PX;
+        margin-left: 7PX;
+        margin-bottom: 10px;
+        margin-top: 10px;
+    }
+
+/* PARTIE ACTIVITE */
+
+    #partie_activités{
+        width: 100%;
+        margin-left: 0PX;
+    }
+    #partie_activités h2{
+        padding-left: 5px;
+        margin: 10px;
+    }
+    #position_activités{
+        flex-wrap: wrap;
+    }
+    .img_grand{
+        width: 90%;
+        margin-left: 20px;
+        margin-top: 35px;
+    }
+    .img_grand img{
+        height: 220px;
+    }
+    .box_texte {
+        padding: 19px;
+        border: 1px solid transparent;
+        box-shadow: 6px 6px 6px #f2f2f2;
+        border-radius: 0px 0px 35px 35px;
+    }
+    .column_activités{
+        padding-left: 25px;
+        align-items: baseline;
+        width: 90%;
+        flex-direction: initial;
+    }
+    .Parc {
+        margin-left: 19px;
+    }
+    .Ile {
+        margin-left: 10px;
+    }
+    .img_moyen{
+        width: 49%;
+    }
+    .img_moyen img{
+        height: 235px;
+    }
+    .img_petit{
+        width: 49%;
+    }
+    .img_petit img{
+        height: 235px;
+        width: 100%;
+    }
+    footer{
+        width: 100%;
+        flex-direction: column;
+        padding: 0;
+        padding-bottom: 40px;
+    }
+    #pied{
+        margin-left: 25px;
+        margin-top: 40px;
+    }
+    .pied_page{
+        margin-left: 25px;
+        margin-top: 33px;
+    }
+}
+
+  /* version tablettes */
+
+@media all and (min-width:769px)and (max-width:992px) {
+    header{
+        padding-left: 0;
+        flex-direction: column;
+        width: 100%;
+    }
+    #image{
+        display: flex;
+        justify-content: center;
+    }
+    #image img{
+        width: 90px;
+    }
+    
+    /* navigation */
+
+    nav{
+        padding: 0;
+        margin-bottom: 20px;
+    }
+    nav ul{
+        width: 100%;
+    }
+    nav li{
+        width:50%;
+        border-bottom: 2px solid var(--grey);
+        padding-bottom: 10px;
+        font-size: 16px;
+        display: flex;
+        justify-content: center;
+    }
+    nav li:hover{
+        border-bottom: 2px solid var(--blue);
+        padding-bottom: 10px;
+    }
+    nav a{
+        margin: 0px;
+    }
+    nav a:hover{
+        border-top: 0px;
+        padding-top: 0px;
+    }
+ 
+    /* first part */
+
+    #firstPart{
+        padding-left: 10px;
+        margin: 0;
+    }
+    #main_title h1{
+        width: 100%;
+        font-size: 20px;
+    }
+    #main_title h2{
+        margin-top: 10px;
+        font-size: 16px;
+    }
+    #searchBar {
+        width: 60%;
+        margin-top: 31px;
+        border-radius: 10px 15px 15px 10px;
+    }
+    .search{
+        width: 90%;
+    }
+    #mainPart{
+        flex-direction: column-reverse;
+        width: 100%;
+        padding-left: 0;
+    }
+    /* PARTIE HEBERGEMENT */
+
+    #partie_hebergement{
+        width: 100%;
+        margin: 0;
+        margin-top: 5px;
+        background-color: #fafafa73;
+    }
+    #partie_hebergement h2{
+        padding-left: 10px;
+    }
+    .photo_carte{
+        margin: 0;
+        width: 47%;
+        padding-left: 5px;
+        box-shadow: 1px 1px 10px var(--grey);
+        margin-bottom: 15px;
+    }
+    .img_carte img {
+        height: 201PX;
+        width: 100%;
+        border: 2PX solid transparent;
+        border-radius: 10PX 10PX 0PX 0PX;
+        object-fit: cover;
+    }
+    #afficher{
+        margin: 10px;
+        height: 35px;
+        padding-left: 0px;
+    }
+    .box_carte {
+        font-size: 12PX;
+        margin-left: 7PX;
+        margin-bottom: 10px;
+        margin-top: 10px;
+    }
+
+    /* PARTIE POPULAIRE */
+
+    #partie_populaire{
+        width: 100%;
+        margin: 0;
+        margin-top: 21px;
+        border-radius: 0;
+    }
+    #partie_populaire h2 {
+        font-size: 20px;
+    }
+     .photo_carte2 {
+        height: 208px;
+        width: 75%;
+        margin-left: 90px;
+    }
+    .img_carte2 img {
+        width: 200PX;
+        height: 200PX;
+        margin: 2PX;
+        border: 2PX solid transparent;
+        border-radius: 15PX 0PX 0PX 15PX;
+        object-fit: cover;
+    }
+    .box_carte2{
+        margin: 4px;
+        font-size: 14px;
+        margin: 15px;
+    }
+    .star2 {
+        margin-top: 100px;
+    }
+    
+/* PARTIE ACTIVITE */
+
+    #partie_activités{
+        width: 100%;
+        margin-left: 0PX;
+    }
+    #partie_activités h2{
+        padding-left: 5px;
+        margin: 10px;
+    }
+    #position_activités{
+        flex-wrap: wrap;
+    }
+    .img_grand{
+        width: 90%;
+        margin-left: 20px;
+        margin-top: 35px;
+    }
+    .img_grand img{
+        height: 265px;
+    }
+    .box_texte {
+        padding: 19px;
+        border: 1px solid transparent;
+        box-shadow: 6px 6px 6px #f2f2f2;
+        border-radius: 0px 0px 35px 35px;
+    }
+    .column_activités{
+        padding-left: 25px;
+        align-items: baseline;
+        width: 90%;
+        flex-direction: initial;
+    }
+    .Parc {
+        margin-left: 19px;
+    }
+    .Ile {
+        margin-left: 10px;
+    }
+    .img_moyen{
+        width: 49%;
+    }
+    .img_moyen img{
+        height: 235px;
+    }
+    .img_petit{
+        width: 49%;
+    }
+    .img_petit img{
+        height: 235px;
+        width: 100%;
+    }
+    footer{
+        width: 100%;
+        padding: 0;
+        padding-bottom: 40px;
+    }
+    #pied{
+        width: 35%;
+        margin-left: 25px;
+        margin-top: 32px;
+    }
+    .pied_page{
+        margin-left: 25px;
+        margin-top: 33px;
+        width: 30%;
+    }
+}
+
+@media all and (min-width:993px) and (max-width:1200px) {
+    header {
+        display: flex;
+        justify-content: space-between;
+        padding-left: 20PX;
+        width: 95%;
+    }
+    header img {
+        width: 90px;
+        margin: 35px;
+        padding-left: 10px;
+    }
+    nav {
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        padding: 20px;
+    }
+    nav a:hover {
+        color: var(--blue);
+        border-top: 3px solid var(--blue);
+        padding-top:45px;
+    }
+    
+    #firstPart {
+        margin: 20px;
+        padding-left: 30px;
+    }
+    #firstPart h2 {
+        font-size: 16px;
+        font-weight: normal;
+        margin-top: 10px;
+    }
+    #searchBar {
+        display: flex;
+        border: 1px solid var(--grey);
+        width: 52%;
+        margin-top: 15px;
+        height: 39PX;
+        border-radius: 10PX;
+    }
+    .search {
+        border: none;
+        display: flex;
+        margin-left: 30px;
+        width: 67%;
+        font-weight: 600;
+        font-size: 16PX;
+    }
+    .button {
+        border: 1px solid transparent;
+        background-color: var(--blue);
+        padding-left: 3PX;
+        width: 23%;
+        border-radius: 0PX 10PX 10PX 0PX;
+        color: white;
+        font-size: 16PX;
+        cursor: pointer;
+    }
+
+    /* PARTIE HEBRGEMENT */
+    
+    #partie_hebergement {
+        background-color: var(--grey);
+        border: 1PX solid transparent;
+        border-radius: 15PX;
+        margin: 25PX;
+        width: 60%;
+    }
+    .photo_carte {
+        border: 2PX solid transparent;
+        width: 28%;
+        background-color: WHITE;
+        margin: 12PX;
+        border-radius: 10PX;
+    }
+    .img_carte img {
+        height: 110PX;
+        width: 98%;
+        border: 2PX solid transparent;
+        border-radius: 10PX 10PX 0PX 0PX;
+        object-fit: cover;
+    }
+    .star {
+        margin-top: 6px;
+        margin-bottom: 7px;
+    }
+
+    /* PARTIE HEBERGEMENT */
+
+    #partie_populaire {
+        background-color: var(--grey);
+        border: 1px solid transparent;
+        border-radius: 15PX;
+        margin: 25PX;
+        width: 30%;
+    }
+    .photo_carte2 {
+        display: flex;
+        margin: 11PX;
+        margin-top: 19px;
+        background-color: white;
+        border: 2PX solid transparent;
+        border-radius: 15PX;
+        height: 114px;
+    }
+    .img_carte2 img {
+        width: 104PX;
+        height: 105PX;
+        margin: 2PX;
+        border: 2PX solid transparent;
+        border-radius: 15PX 0PX 0PX 15PX;
+        object-fit: cover;
+    }
+    .star2 {
+        margin-top: 35PX;
+    }
+}
+@media all and (min-width:1442px) and (max-width:2560px) {
+    body{
+        width: 80%;
+        margin: auto;
+    }
+}
